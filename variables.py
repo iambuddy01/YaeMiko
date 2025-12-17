@@ -23,7 +23,7 @@ class Config(object):
     API_HASH = "d6186691704bd901bdab275ceaab88f3"
 
     # Database configuration (PostgreSQL)
-    DATABASE_URL = "postgres:"
+    DATABASE_URL = os.getenv("DATABASE_URL")
 
     # Event logs chat ID and message dump chat ID
     EVENT_LOGS = -1003479111958
